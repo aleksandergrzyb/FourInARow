@@ -1,0 +1,50 @@
+
+settings =
+{
+	orientation =
+	{
+		default = "portrait",
+		supported =
+		{
+		},
+	},
+
+
+	iphone =
+	{
+		plist =
+		{
+			CFBundleDisplayName = "Four In A Row",
+            		MinimumOSVersion = "4.0",
+            		UIStatusBarHidden = true,
+			UIPrerenderedIcon = true,
+            		UIApplicationExitsOnSuspend = false,
+            
+			UIInterfaceOrientation = "UIInterfaceOrientationPortrait",
+			
+			UISupportedInterfaceOrientations = 
+			{
+				"UIInterfaceOrientationPortrait",
+				"UIInterfaceOrientationPortrait",
+			},
+			
+			UIAppFonts = 
+			{
+				"Hobo Std.ttf"
+			},
+            
+			CFBundleIconFile = "",
+			CFBundleIconFiles = 
+			{
+			},
+		},
+	},
+}
+
+settings.iphone.plist["CFBundleShortVersionString"] = 1.0
+settings.iphone.plist["UIInterfaceOrientation~ipad"] = "UIInterfaceOrientationPortrait"
+settings.iphone.plist["UISupportedInterfaceOrientations~ipad"] = 
+{
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortrait",
+}
